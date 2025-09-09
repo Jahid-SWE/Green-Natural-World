@@ -181,15 +181,22 @@
 
 
 
-
-
-
-
-
     <!-- script file  -->
     <script src="./script.js"></script>
 
-   
+    <!-- Modal  -->
+    <input type="checkbox" id="plant_modal" class="modal-toggle" />
+    <div class="modal" role="dialog">
+        <div class="modal-box relative">
+            
+            <h3 id="modal-title" class="text-lg font-bold"></h3>
+            <img id="modal-image" class="w-full h-48 object-cover rounded mt-2 mb-3" />
+            <span id="modal-category" class=" py-1 text-gray-900 rounded"></span>
+            <p id="modal-price" class="text-gray-900"></p>
+            <p id="modal-desc" class="py-4 text-gray-700"></p>
+            <label for="plant_modal" class="btn btn-sm bg-slate-400 absolute right-5 bottom-2">Close</label>
+        </div>
+    </div>
 
 </body>
 
