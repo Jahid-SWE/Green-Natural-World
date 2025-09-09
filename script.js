@@ -203,5 +203,32 @@ function handleRemoveFromCart(event) {
 }
 
 
+
+
+
+
+
+//  modal
+
+function openPlantModal(plantElement) {
+    const name = plantElement.dataset.plantName;
+    const image = plantElement.dataset.plantImage;
+    const category = plantElement.dataset.plantCategory;
+    const price = plantElement.dataset.plantPrice;
+    const desc = plantElement.dataset.plantDesc;
+
+    document.getElementById("modal-title").textContent = name;
+    document.getElementById("modal-image").src = image;
+    document.getElementById("modal-category").textContent = `Category: ${category}`;
+    document.getElementById("modal-price").textContent = `Price: ৳${price}`;
+    document.getElementById("modal-desc").textContent = `Description: ${desc}`;
+  
+
+    document.getElementById("plant_modal").checked = true;
+}
+
+
+
+
 loadCategories();
 allTreePlantsLoad();
